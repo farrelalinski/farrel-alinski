@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farrel Alinski — Blog Pribadi</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; background: #0d0d0f; color: #e8e6e1; min-height: 100vh; }
+    a { text-decoration: none; }
+
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; border-bottom: 0.5px solid #2a2a2e; }
+    .nav-logo { font-size: 18px; font-weight: 500; color: #f0eee9; letter-spacing: -0.3px; }
+    .nav-logo span { color: #a78bfa; }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { font-size: 14px; color: #888; cursor: pointer; transition: color 0.2s; }
+    .nav-links a:hover { color: #e8e6e1; }
+
+    .hero { padding: 4rem 2rem 3rem; max-width: 720px; margin: 0 auto; }
+    .hero-tag { font-size: 12px; color: #a78bfa; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+    .hero h1 { font-size: 36px; font-weight: 500; color: #f0eee9; line-height: 1.2; margin-bottom: 1rem; letter-spacing: -0.5px; }
+    .hero p { font-size: 16px; color: #888; line-height: 1.7; margin-bottom: 2rem; }
+    .hero-btn { display: inline-block; background: #a78bfa; color: #1a1040; font-size: 14px; font-weight: 500; padding: 10px 22px; border-radius: 8px; cursor: pointer; border: none; transition: background 0.2s; }
+    .hero-btn:hover { background: #c4b5fd; }
+
+    .section { max-width: 720px; margin: 0 auto; padding: 2rem; }
+    .section-title { font-size: 13px; color: #555; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; font-weight: 500; }
+
+    .about { background: #131316; border: 0.5px solid #222226; border-radius: 12px; padding: 1.5rem; display: flex; align-items: center; gap: 1.25rem; margin-bottom: 2rem; }
+    .avatar { width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #a78bfa, #7c3aed); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 500; color: #fff; flex-shrink: 0; }
+    .about-info h3 { font-size: 15px; font-weight: 500; color: #f0eee9; margin-bottom: 4px; }
+    .about-info p { font-size: 13px; color: #666; line-height: 1.5; }
+
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post-card { background: #131316; border: 0.5px solid #222226; border-radius: 12px; padding: 1.25rem 1.5rem; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+    .post-card:hover { border-color: #a78bfa55; background: #17171b; }
+    .post-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 0.6rem; }
+    .post-tag { font-size: 11px; padding: 2px 9px; border-radius: 20px; font-weight: 500; }
+    .tag-tech { color: #a78bfa; background: #a78bfa18; }
+    .tag-life { color: #34d399; background: #34d39918; }
+    .tag-inspire { color: #fb923c; background: #fb923c18; }
+    .post-date { font-size: 12px; color: #555; }
+    .post-title { font-size: 16px; font-weight: 500; color: #e8e6e1; margin-bottom: 0.4rem; line-height: 1.4; }
+    .post-excerpt { font-size: 14px; color: #666; line-height: 1.6; }
+    .post-footer { margin-top: 0.75rem; }
+
+    .footer { text-align: center; padding: 2rem; font-size: 13px; color: #444; border-top: 0.5px solid #1e1e22; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-logo">Farrel <span>Alinski</span></div>
+    <div class="nav-links">
+      <a href="#">Beranda</a>
+      <a href="#">Blog</a>
+      <a href="#">Tentang</a>
+      <a href="#">Kontak</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-tag">Blog Pribadi</div>
+    <h1>Pikiran, cerita,<br>dan hal-hal menarik.</h1>
+    <p>Selamat datang di ruang digital saya. Di sini saya menulis tentang teknologi, kehidupan sehari-hari, dan berbagai hal yang menginspirasi.</p>
+    <button class="hero-btn">Tentang Saya →</button>
+  </div>
+
+  <div class="section">
+    <div class="about">
+      <div class="avatar">FA</div>
+      <div class="about-info">
+        <h3>Farrel Alinski</h3>
+        <p>Penulis & kreator konten. Suka berbagi ide dan pengalaman lewat tulisan. Berbasis di Indonesia.</p>
+      </div>
+    </div>
+
+    <div class="section-title">Tulisan Terbaru</div>
+    <div class="posts">
+
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-tag tag-tech">Teknologi</span>
+          <span class="post-date">14 Apr 2026</span>
+        </div>
+        <div class="post-title">Kenapa saya mulai belajar coding di usia 20-an</div>
+        <div class="post-excerpt">Perjalanan saya dari nol hingga bisa membuat website pertama — dan semua pelajaran berharga di tengahnya.</div>
+        <div class="post-footer"><span style="font-size:12px; color:#a78bfa;">Baca selengkapnya →</span></div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-tag tag-life">Kehidupan</span>
+          <span class="post-date">9 Apr 2026</span>
+        </div>
+        <div class="post-title">Produktif tanpa harus sibuk sepanjang hari</div>
+        <div class="post-excerpt">Tips dan kebiasaan kecil yang membantu saya lebih fokus dan selesaikan lebih banyak hal dalam sehari.</div>
+        <div class="post-footer"><span style="font-size:12px; color:#34d399;">Baca selengkapnya →</span></div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-tag tag-inspire">Inspirasi</span>
+          <span class="post-date">2 Apr 2026</span>
+        </div>
+        <div class="post-title">5 buku yang mengubah cara saya berpikir</div>
+        <div class="post-excerpt">Rekomendasi bacaan yang benar-benar memberi dampak nyata pada cara saya melihat dunia dan mengambil keputusan.</div>
+        <div class="post-footer"><span style="font-size:12px; color:#fb923c;">Baca selengkapnya →</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 Farrel Alinski · Dibuat dengan semangat
+  </div>
+
+</body>
+</html>
